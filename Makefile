@@ -13,6 +13,7 @@ build:
 	bin/easy_install -U distribute
 	$(PI) install -r prod-reqs.txt
 	$(PY) setup.py develop
+	cp -i simplepush-dist.ini simplepush_srv-local.ini
 
 test:
 	$(NO) $(APPNAME)
